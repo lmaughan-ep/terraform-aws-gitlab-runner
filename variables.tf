@@ -324,8 +324,8 @@ variable "runners_check_interval" {
 
 variable "runners_dns" {
   description = "List of custom DNS servers to use for the runners"
-  type = list(string)
-  default = []
+  type = string
+  default = ""
 }
 
 variable "cache_bucket_prefix" {

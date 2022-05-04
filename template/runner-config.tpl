@@ -25,7 +25,7 @@ log_format = "json"
     pull_policy = "${runners_pull_policy}"
     runtime = "${runners_docker_runtime}"
     helper_image = "${runners_helper_image}"
-    dns = ${runners_dns}
+    dns = ["${runners_dns}"]
   [runners.docker.tmpfs]
     ${runners_volumes_tmpfs}
   [runners.docker.services_tmpfs]
