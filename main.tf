@@ -131,6 +131,7 @@ locals {
       bucket_name                       = local.bucket_name
       shared_cache                      = var.cache_shared
       sentry_dsn                        = var.sentry_dsn
+      runners_dns                       = var.runners_dns
     }
   )
 }

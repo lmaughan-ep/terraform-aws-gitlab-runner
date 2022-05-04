@@ -322,6 +322,12 @@ variable "runners_check_interval" {
   default     = 3
 }
 
+variable "runners_dns" {
+  description = "List of custom DNS servers to use for the runners"
+  type = list(string)
+  default = []
+}
+
 variable "cache_bucket_prefix" {
   description = "Prefix for s3 cache bucket name."
   type        = string
