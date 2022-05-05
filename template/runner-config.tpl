@@ -2,6 +2,7 @@ concurrent = ${runners_concurrent}
 check_interval = ${runners_check_interval}
 sentry_dsn = "${sentry_dsn}"
 log_format = "json"
+listen_address = "${listen_address}"
 
 [[runners]]
   name = "${runners_name}"

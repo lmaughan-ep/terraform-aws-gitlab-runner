@@ -328,6 +328,12 @@ variable "runners_dns" {
   default = ""
 }
 
+variable "listen_address" {
+  description = "Host and port to use for publishing Prometheus metrics, e.g. localhost:9252"
+  type = string
+  default = ""
+}
+
 variable "cache_bucket_prefix" {
   description = "Prefix for s3 cache bucket name."
   type        = string
