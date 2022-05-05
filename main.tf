@@ -69,7 +69,7 @@ locals {
       gitlab_runner_maximum_timeout                = var.gitlab_runner_registration_config["maximum_timeout"]
       gitlab_runner_access_level                   = lookup(var.gitlab_runner_registration_config, "access_level", "not_protected")
       sentry_dsn                                   = var.sentry_dsn
-      listen_address                               = var.listen_address
+
   })
 
   template_runner_config = templatefile("${path.module}/template/runner-config.tpl",
@@ -133,6 +133,7 @@ locals {
       shared_cache                      = var.cache_shared
       sentry_dsn                        = var.sentry_dsn
       runners_dns                       = var.runners_dns
+      listen_address                    = var.listen_address
     }
   )
 }
